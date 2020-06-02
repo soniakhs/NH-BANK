@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ol,ul{list-style: none}
+a{text-decoration: none; outline: 0; color: #333;}
+img{ border: 0}
+.wrap{ min-width: 1200px; max-width: 1200px;}
+button{ cursor: pointer; background-color: inherit; box-shadow: 0; border: 0;}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%; height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header_box{
+    width: 1200px;
+    position: absolute;
+    left: 50%; top: 0;
+    transform: translateX(-50%);
+}
+
+header .header_box > div{
+    float: left;
+}
+header .logo{
+    width: 200px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+header .menu{
+    position: absolute;
+    right: 0; top: 50px;
+    z-index: 99;
+    height: 280px;
+}
+
+.menu .main-menu {
+    width: 800px;
+    height: 50px;
+}
+
+.menu .main-menu ul li{
+    float: left;
+    width: 130px; height: 100%;
+}
+
+.menu .main-menu ul li a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold; font-size: 20px;
+}
+
+.menu .main-menu ul li a:hover{
+    color: #0000b7;
+   
+}
+
+.menu .sub-menu {
+    z-index: 99;
+    width: 1200px; margin-left: -400px;
+    background-color: #ededed; 
+    height: 240px;
+    display: none;
+}
+
+.menu .sub-menu > div{
+    margin-left: 400px;
+}
+
+.menu .sub-menu > div > ul > li > ul  {
+    float: left;
+    width: 130px; height: 240px;
+    border-right: 1px solid #ddd;
+}
+.menu .sub-menu > div > ul > li:last-child > ul{
+    border: 0;
+}
+
+.menu .sub-menu > div > ul > li > ul > li{
+    width: 100%; height: 40px;
+}
+
+.menu .sub-menu > div > ul > li > ul > li > a{
+    display: block;
+    text-align:center;
+    line-height: 40px;
+}
+
+.menu .sub-menu > div > ul > li > ul > li > a:hover{
+    border-bottom: 2px solid #0000b7;
+    color: #7171ff;
+}
+
+.slide_wrap{
+    position: absolute; top: 105px;
+    width: 100%; height: 400px;
+    z-index: -99;
+}
+
+.slide{
+    z-index: -1;
+    width:1200px; height: 400px;
+    position: absolute; left: 50%; 
+    transform: translate(-50%);
+    overflow: hidden;
+}
+.slide_bar{
+    width: 3600px; height: 400px;
+}
+
+.slide img{
+    float: left;
+    width: 1200px; height: 100%;
+}
+
+.items_wrap{
+    position: absolute; top: 505px;
+    width: 100%; height: 200px; background-color: #d1e3f4;
+}
+
+.item_bar{
+    width: 1200px; height: 100%; 
+   position: absolute; left: 50%; transform: translate(-50%);
+}
+
+.item_bar h2{
+    height: 60px; line-height: 60px;
+    padding-left: 30px; text-align: center;
+}
+
+.item_box{
+    height: 140px; width: 1200px;
+    position: absolute; left: 50%; margin-left: -340px;
+}
+
+.item_box > div{
+    float: left;
+    width: 100px; height: 100px; 
+    border-radius: 50%;
+    position: relative;
+    margin-top: 10px; margin-left: 30px; 
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.item_box > div svg{
+    font-size: 40px;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.info_box{
+    width: 100%; height: 100%;
+    position: absolute; top:0;
+    background-color: #0000b7;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.info_box > p{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    font-weight: bold; font-size: 10px; transition: all 0.4s; 
+    color: #fff;
+}
+
+.item_box > div:hover svg{
+    color: #fff;
+}
+
+.item_box > div:hover {
+    background-color: #000;
+}
+
+.item_box > div:hover .info_box{
+    opacity: 0.9;
+}
+
+.item_box > div:hover .info_box p{
+    font-size: 24px;
+}
+
+.contents_wrap{
+    position: absolute; top: 705px; 
+    width: 100%; height: 800px; 
+}
+
+.contents_box{
+    width: 1200px; height: 760px;
+    position: absolute; left: 50%; top: 20px; transform: translateX(-50%);
+}
+
+.content{
+    width: 1100px; height: 100%;
+}
+
+.btn_wrap{
+     height: 80px;
+}
+
+.btn_wrap > .content_btn{
+    width: 250px; height: 100%; 
+    float: left; 
+    text-align: center; 
+}
+
+.content_btn > a{
+    display: block;
+    font-weight: bold; font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-bottom: 0;
+    text-align: center;
+    line-height: 80px;
+}
+
+.content_btn:first-child > a{
+    background-color: #ddd;
+    border: 1px solid #000; 
+    border-right: 0;
+    cursor: auto;
+}
+
+.content_btn:nth-child(2) > a{
+    background-color: #58636d;
+    color: #ffffff; 
+}
+
+
+.content_btn:nth-child(2) a:hover, .content_btn:nth-child(3) > a:hover {
+    background: #d8d8d8;
+    color: #fff;
+}
+
+.content_btn:nth-child(2) a {
+    border-right: 0;  
+}
+
+.content .story_box{
+    border: 1px solid;
+    margin-top: -2px;
+    height: 655px; width: 100%;
+}
+
+
+.story_box .inform{
+    width: 100%; height: 100%;
+    padding: 10px 50px;
+}
+
+.story_box .inform > a{
+    margin-left: 900px;
+    font-weight: bold;
+}
+
+.story_box .inform > a:hover{
+     color: #7171ff;
+}
+
+.story_box .inform ul{
+     width: 100%:
+}
+
+.story_box .inform ul li{
+    float: left;
+    height: 70px;
+    line-height: 5;
+    font-size: 20px;
+}
+
+.story_box .inform ul li:first-child{
+    width: 80%; 
+}
+
+.story_box .inform ul li a{
+    display: block;
+    
+}
+
+.talk{
+    width: 100%; height: 100%;
+    display: none;
+}
+
+.story_box .inform ul li a:hover{
+    color: #7171ff;
+}
+
+.talk h2{
+    height: 100px; line-height: 100px;
+    width: 200px;
+    margin-left: 500px;
+}
+
+.coin_box{
+    width: 60%; height: 300px;
+    position: absolute; left: 50%; transform: translateX(-50%);
+     background-color: #ddd; border-radius: 20px;
+}
+
+.coin_box .coin_innerbox{
+    float: left; margin: 0 40px;
+   width: 100px;height: 100%;
+    margin: 50px 100px;
+}
+
+.coin_box .coin_innerbox p{
+   margin:10px 30px;
+    width: 100px;
+    text-align: center;
+}
+
+.coininfo_box{
+    position: absolute;
+    bottom: -90px; left: 100px;
+    width: 100%; height: 300px;
+}
+
+.coininfo_box h3{
+    margin-top: 20px;
+}
+
+.coininfo_box .event{
+    position: absolute; top: 40px; left: 450px;
+}
+
+.coininfo_box .event button{
+    font-size: 30px;
+    background-color: #000000; color: #fff; 
+    border-radius: 15px;
+    height: 70px; width: 450px;
+    opacity: 0.6; transition: all 0.2s;
+}
+
+.coininfo_box .event button:hover{
+    opacity: 1;
+}
+
+footer{
+    position: absolute; top: 1505px;
+    width: 100%; height: 400px;
+}
+
+footer .foot1{
+    width: 100%; height: 80px; 
+    border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;
+}
+
+.foot1 .link_wrap{
+    width: 1200px; height: 100%;
+    position: absolute; left: 50%; transform: translateX(-50%);
+}
+
+.foot1 .link_wrap a{
+    margin: 0 40px;
+    font-size: 18px;
+    line-height: 80px;
+}
+
+footer .foot2{
+    width: 1200px; position: absolute; left: 50%;
+    transform: translateX(-50%);
+}
+
+.snsWrap{
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.snsWrap svg{
+    font-size: 60px;
+    margin: 30px 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.snsWrap svg:hover{
+    color: #7171ff;
+}
+
+.copy{
+    position: absolute;
+    top: 150px; left: 0;
+}
+
+.copy p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.logo2{
+    position: absolute;
+    width: 300px;
+    right: 0; top: 180px;
+}
+
+.logo2 img{
+    width: 100%; height: auto;
+}
+
+.family{
+    position: absolute;right: 60px; top: 50px;
+}
+
+.family select{
+    height: 30px; width: 200px;
+}
