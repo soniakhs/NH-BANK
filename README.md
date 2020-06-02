@@ -12,9 +12,9 @@
 
 ## COLOR
 > ![blue](https://user-images.githubusercontent.com/58199479/83522751-1187c800-a51c-11ea-96db-81b938371415.PNG)
- BLUE , ![white](https://user-images.githubusercontent.com/58199479/83522764-16e51280-a51c-11ea-8ed2-e83abb476a8f.PNG)
- WHITE , ![gray](https://user-images.githubusercontent.com/58199479/83522756-13ea2200-a51c-11ea-87f5-ebc73f871bfe.PNG)
- GRAY
+ BLUE , ![gray](https://user-images.githubusercontent.com/58199479/83522756-13ea2200-a51c-11ea-87f5-ebc73f871bfe.PNG)
+ GRAY , ![white](https://user-images.githubusercontent.com/58199479/83522764-16e51280-a51c-11ea-8ed2-e83abb476a8f.PNG)
+ WHITE
 
 
 
